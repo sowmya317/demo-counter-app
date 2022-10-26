@@ -28,6 +28,13 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<servers>
+    		 <server>
+        		<id>my-internal-site</id>
+       		 	<username>nexus</username>
+        		<password>nexus</password>
+    		</server>
+  	</servers>
 
 	<build>
 		<plugins>
@@ -37,7 +44,7 @@
 				<executions>
                 <execution>
                     <id>repackage</id>
-                    <goals>
+		    <goals>
                         <goal>repackage</goal>
                     </goals>
                     <configuration>
